@@ -13,18 +13,18 @@
 {/block}
 {* Nav in 3 parts *}
 {block name='header_nav'}
-  <div class="{$headerTopName} md-container">
-    <div class="nav-conte row">
-      <div class="col-">
+  <div class="{$headerTopName} container">
+    <div class="nav-conte row align-items-center">
+      <div class="col-3">
         {hook h='displayNav1'}
       </div>
-      <div class="col-">
+      <div class="col-6">
         {hook h='displayNav2'}
         <div class="hidden-md-up mobile">
           <div class="float-xs-right" id="_mobile_user_info"></div>
         </div>
       </div>
-      <div class="col-">
+      <div class="col-3">
         {hook h='displayNav3'}
         <div class="hidden-md-up mobile">
           <div class="float-xs-right" id="_mobile_cart"></div>
@@ -35,9 +35,9 @@
 {/block}
 {*  *}
 {block name='header_top'}
-  <div class="header-top">
-    <div class="fl-menu">
-      <div class="logo-cont">
+  <div class="header-top container">
+    <div class="fl-menu row align-items-center">
+      <div class="logo-cont col-4">
         <a href="{$urls.pages.index}">
           <h1>
             {*<img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}" loading="lazy">*}
@@ -45,7 +45,7 @@
           </h1>
         </a>
       </div>
-      <nav>
+      <nav class="col-8">
         {hook h='displayTop'}
       </nav>
       {*<div id="mobile_top_menu_wrapper" class="row hidden-md-up" style="display:none;">
@@ -58,26 +58,30 @@
       </div>*}
     </div>
   </div>
-  <div class="search-conte">
-    {hook h='displayNavFullWidth'}
-    <div class="ad-conte">
-      <a href="#">
-        <button type="button" class="btn btn-link">
-          <span class="hidden-md-down">{l s='Payments' d='Shop.Theme.Global'}</span>
-          <i><img src="https://esferos.com/imagenes/logos/pse8.png" alt="Pagos PSE"></i>
-        </button>
-      </a>
-      <a href="#">
-        <button type="button" class="btn btn-link">
-          <i class="material-icons">description</i>
-          <span class="hidden-md-down">{l s='Purchase Order' d='Shop.Theme.Global'}</span>
-      </button></a>
-      <a href="#">
-        <button type="button" class="btn btn-link">
-          <i class="material-icons">menu_book</i>
-          <span class="hidden-md-down">{l s='Catalogs' d='Shop.Theme.Global'}</span>
-        </button>
-      </a>
+  <div class="search-conte container">
+    <div class="row">
+      <div class="col-6">
+        {hook h='displayNavFullWidth'}
+      </div>
+      <div class="ad-conte col-6">
+        <a href="#">
+          <button type="button" class="btn btn-link">
+            <span class="hidden-md-down">{l s='Payments' d='Shop.Theme.Global'}</span>
+            <i><img src="https://esferos.com/imagenes/logos/pse8.png" alt="Pagos PSE"></i>
+          </button>
+        </a>
+        <a href="#">
+          <button type="button" class="btn btn-link">
+            <i class="material-icons">description</i>
+            <span class="hidden-md-down">{l s='Purchase Order' d='Shop.Theme.Global'}</span>
+        </button></a>
+        <a href="#">
+          <button type="button" class="btn btn-link">
+            <i class="material-icons">menu_book</i>
+            <span class="hidden-md-down">{l s='Catalogs' d='Shop.Theme.Global'}</span>
+          </button>
+        </a>
+      </div>
     </div>
   </div>
 {/block}
