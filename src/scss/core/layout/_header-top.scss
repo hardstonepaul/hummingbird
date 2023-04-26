@@ -1,7 +1,21 @@
 $component-name: header-top;
 
+.header-nav {
+  background: $header-nav-bg;
+}
+
+.transitiOn {
+  transition: all 0.5s;
+}
+
 .#{$component-name} {
-  background-color: var(--header-top-bg);
+  background: transparentize($header-nav-bg, 0.8);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  max-width: 100vw;
+  z-index: 100;
+  backdrop-filter: blur(10px);
 
   a {
     color: var(--header-top-color);
@@ -38,5 +52,20 @@ $component-name: header-top;
     .container {
       padding: 0;
     }
+  }
+}
+
+#contact-link {
+padding-left: 0.5rem;
+  a {
+    height: 30px;
+    display: flex;
+    align-items: center;
+  }
+  .wha-logo {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    background-image: url(https://esferos.com/imagenes/logos/wha.svg);
   }
 }

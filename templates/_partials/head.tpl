@@ -64,6 +64,8 @@
   {include file="_partials/javascript.tpl" javascript=$javascript.head vars=$js_custom_vars}
 {/block}
 
+<script defer src="/themes/hummingbird/assets/js/custom.js"></script>
+
 {block name='hook_header'}
   {$HOOK_HEADER nofilter}
 {/block}

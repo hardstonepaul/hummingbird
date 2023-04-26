@@ -64,12 +64,14 @@ global_settings:
       displayNav1:
         - ps_contactinfo
       displayNav2:
+        - ps_customersignin
+      displayNav3:
         - ps_languageselector
         - ps_currencyselector
-        - ps_customersignin
         - ps_shoppingcart
       displayTop:
         - ps_mainmenu
+      displayNavFullWidth:
         - ps_searchbar
       displayHome:
         - ps_imageslider
