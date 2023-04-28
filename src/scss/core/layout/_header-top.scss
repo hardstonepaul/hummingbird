@@ -1,11 +1,8 @@
 $component-name: header-top;
-
+//top haeder first part
 .header-nav {
   background: $header-nav-bg;
-}
-
-.transitiOn {
-  transition: all 0.5s;
+  height: 50px;
 }
 
 .#{$component-name} {
@@ -69,3 +66,4 @@ padding-left: 0.5rem;
     background-image: url(https://esferos.com/imagenes/logos/wha.svg);
   }
 }
+
