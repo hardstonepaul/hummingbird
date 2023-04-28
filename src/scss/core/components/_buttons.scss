@@ -7,6 +7,18 @@
   .material-icons {
     font-size: $default-button-icon-size;
   }
+  //btn rounded for right side
+  &.btn-right {
+    border-radius: $btn-right-br;
+  }
+  //btn rounded for left side
+  &.btn-left {
+    border-radius: $btn-left-br;
+  }
+
+  &.green-bg {
+    background: greenyellow;
+  }
 
   &.btn-sm {
     gap: $small-button-icon-gap;

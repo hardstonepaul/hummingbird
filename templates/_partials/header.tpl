@@ -14,9 +14,9 @@
 {/block}
 {* Firts Part suefull links *}
 {block name='header_nav'}
-  <div class="{$headerTopName} container-fluid">
-    <div class="container">
-      <div class="nav-conte row align-items-center">
+  <div class="{$headerTopName} container-fluid ali">
+    <div class="container cien-h">
+      <div class="nav-conte row align-items-center cien-h">
         <div class="col-3">
           {hook h='displayNav1'}
         </div>

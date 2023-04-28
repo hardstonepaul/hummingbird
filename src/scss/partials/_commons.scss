@@ -2,7 +2,6 @@
 
 $default-icon-color: var(--bs-primary) !default;
 
-
 body,
 html {
   min-height: 100%;
@@ -66,4 +65,12 @@ label .color,
 
 .dark {
   color: var(--bs-gray-800);
+}
+//trasition for the nav menu when has sticky
+.transitiOn {
+  transition: all 0.5s;
+}
+//fix for header top heights
+.cien-h {
+  height: 100%;
 }
